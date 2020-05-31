@@ -18,7 +18,8 @@ export default {
   methods: {
     search: function() {
       axios
-        .post(`http://localhost:3000/api/idiot/search`, {
+        .post(`http://girlazo.com/halloffail/api/idiot/search`, {
+          
           query: this.query
         })
         .then(response => {

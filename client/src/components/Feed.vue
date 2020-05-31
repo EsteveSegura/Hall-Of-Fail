@@ -32,7 +32,7 @@ export default {
     };
   },
   created() {
-    axios.get("http://localhost:3000/api/idiot").then(result => {
+    axios.get("http://girlazo.com/halloffail/api/idiot").then(result => {
       this.users = result.data.idiots;
       console.log(this.users);
     });
