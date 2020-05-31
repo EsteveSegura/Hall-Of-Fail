@@ -1,8 +1,8 @@
 <template>
-    <div class="search-container">
-      <input class="input-search" v-model="query" v-on:keyup.enter="search" placeholder="Busqueda..." />
-      <button class="btn-search" v-on:click="search()">Buscar</button>
-    </div>
+  <div class="search-container">
+    <input class="input-search" v-model="query" v-on:keyup.enter="search" placeholder="Busqueda..." />
+    <button class="btn-search" v-on:click="search()">Buscar</button>
+  </div>
 </template>
 
 <script>
@@ -18,8 +18,7 @@ export default {
   methods: {
     search: function() {
       axios
-        .post(`http://girlazo.com/halloffail/api/idiot/search`, {
-          
+        .post(`http://girlazo.com/halloffail/api/idiot/search/`, {
           query: this.query
         })
         .then(response => {
