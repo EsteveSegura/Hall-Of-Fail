@@ -18,7 +18,7 @@ export default {
   methods: {
     search: function() {
       axios
-        .post(`/halloffail/api/idiot/`, {
+        .post(`/halloffail/api/idiot/search/`, {
           query: this.query
         })
         .then(response => {
