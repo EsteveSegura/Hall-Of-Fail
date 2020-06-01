@@ -21,7 +21,7 @@ router.post('/idiot/search', async (req, res) => {
         let dbQuery = await database.search(req.body.query);
         res.json({ 'idiots': dbQuery })
     } catch (error) {
-        res.json({ 'message': 'Wrong' })
+        res.json({ 'message': false })
     }
 })
 
