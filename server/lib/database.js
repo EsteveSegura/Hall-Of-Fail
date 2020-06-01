@@ -8,7 +8,7 @@ async function getUsers(limit) {
     let anonymizer = limitArrayByLength.map((item) => {
         let anonymizeUser = item;
         anonymizeUser.username = utils.createRandomName()
-        anonymizeUser.profile_pic_url = `https://loremflickr.com/200/200/` //Case on
+        //anonymizeUser.profile_pic_url = `https://loremflickr.com/200/200/` //Case on
         return anonymizeUser
     })
     return anonymizer;
@@ -21,7 +21,7 @@ async function search(query) {
     let anonymizer = limitArrayByLength.map((item) => {
         let anonymizeUser = item;
         anonymizeUser.username = utils.createRandomName()
-        anonymizeUser.profile_pic_url = `https://loremflickr.com/200/200/` //Case on
+        //anonymizeUser.profile_pic_url = `https://loremflickr.com/200/200/` //Case on
         return anonymizeUser
     })
     return anonymizer;
